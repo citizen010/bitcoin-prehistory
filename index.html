@@ -19,17 +19,75 @@
     <meta name="docsearch:language" content="en">
     <meta name="docsearch:version" content="1.0">
     <link rel="shortcut icon" href="assets/img/favicon.ico">
-    <!-- Font -->
+    <!-- GOOGLE Font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="./assets/css/vendor.min.css">
-    <!-- CSS Front Template -->
+    <!-- CSS Template -->
     <link rel="stylesheet" href="./assets/css/theme.min.css?v=1.0">
+    <!-- CSS FontAwesome-->
+    <script src="https://kit.fontawesome.com/73f2c3670f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<div class="container">
+<!-- ========== HEADER ========== -->
+<header id="header" class="header header-sticky-top border-bottom"
+        data-hs-header-options='{
+          "fixMoment": 1000,
+          "fixEffect": "slide"
+        }'>
+  <div class="header-section">
+    <div id="logoAndNav" class="container">
+      <!-- Nav -->
+      <nav class="js-mega-menu navbar navbar-expand-lg">
+        <!-- Logo -->
+        <h2 class="text-primary font-weight-bold"><i class="fab fa-btc"></i> Prehistory</h2>
+        <!-- End Logo -->
+
+        <!-- Responsive Toggle Button -->
+        <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navBar"
+                data-toggle="collapse"
+                data-target="#navBar">
+          <span class="navbar-toggler-default">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"/>
+            </svg>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
+            </svg>
+          </span>
+        </button>
+        <!-- End Responsive Toggle Button -->
+
+        <!-- Navigation -->
+        <div id="navBar" class="collapse navbar-collapse">
+          <ul class="js-scroll-nav navbar-nav">
+            <li class="navbar-nav-item" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="A view into the Bitcon ecosystem">
+              <a class="nav-link" href="/">Key Metrics</a>
+            </li>
+            <li class="navbar-nav-item"class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Mnemonic code converter/explorer">
+              <a class="nav-link" href="/mcc/">BIP39 Mnemonic</a>
+            </li>
+            <li class="nav-item navbar-nav-last-item">
+              <a class="btn btn-dark btn-sm transition-3d-hover" href="https://bitcoin-translate.it/" target="_blank">Bitcoin in italiano</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Navigation -->
+      </nav>
+      <!-- End Nav -->
+    </div>
+  </div>
+</header>
+<!-- ========== END HEADER ========== -->
+
+<div class="container space-2">
     <div class="tab-content" id="pills-tabContent-6">
         <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6" style="min-height: 250px;">
             <div data-aos="fade-down">
@@ -544,16 +602,57 @@
 
             </ul>
             <!-- TIMELINE END -->
-            <a href="https://btc.onosendai.eu" class="btn btn-primary btn-block" role="button" aria-pressed="true">
-                <figure class="max-w-8rem mx-auto">
-                    <img class="img-fluid" src="assets/svg/icons/icon-white-54.svg" alt="SVG">
-                </figure>
-                Health dashboard
-            </a>
         </div>
     </div>
 </div>
-
+  
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark">
+    <div class="container">
+  
+        <div class="space-1">
+            <div class="row align-items-md-center mb-7">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Nav Link -->
+                    <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Key Metrics</a>
+                        </li>
+                        <li class="nav-item opacity mx-3">/</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mcc/">BIP39 Mnemonic</a>
+                        </li>
+                        <li class="nav-item opacity mx-3">/</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://bitcoin-translate.it" target="_blank">Bitcoin in italiano</a>
+                        </li>
+                    </ul>
+                    <!-- End Nav Link -->
+                </div>
+            
+                <div class="col-md-6 text-md-right">
+                    <ul class="list-inline mb-0">
+                         <!-- Social Networks -->
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-light" href="https://twitter.com/italiansatoshi" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-xs btn-icon btn-soft-light" href="https://github.com/citizen010" target="_blank">
+                            <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <!-- End Social Networks -->
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="opacity-xs my-0">
+        </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
 
 <!-- FOOTER START -------------------------------------------------------------------------------------------->
 
