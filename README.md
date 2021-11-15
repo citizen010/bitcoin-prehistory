@@ -4,4 +4,4 @@
 
 Timeline of history events related to bitcoin before it was released to the public by Satoshi Nakamoto.
 
-[Live preview](https://btc.onosendai.eu/prehistory)
+[Live preview](https://bitcoinstan.io/prehistory)
